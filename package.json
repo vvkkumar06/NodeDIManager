@@ -1,12 +1,20 @@
 {
   "name": "node-di-manager",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.4",
+  "description": "Light weight easy to use, node dependency injection container",
   "main": "index.js",
+  "keywords": [
+    "dependency injection",
+    "dependency container",
+    "node dependency injection"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vvkkumar06/NodeDIManager.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC"
 }
