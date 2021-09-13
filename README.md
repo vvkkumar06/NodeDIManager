@@ -28,11 +28,10 @@ For production environments...
 ```sh
 
 async function configure() {
-    return await NodeDIManager.register([
-        //[path, alias]
-        ['./repositories/user-repo.js', 'UserRepository'],
-        ['./services/user-service.js', 'UserService']
-    ])
+     let map = new Map();
+    map.set(path.join(__dirname,'repositories/user-repo.js'), 'UserRepository');
+    map.set(path.join(__dirname,'services/user-service.js'), 'UserService')
+    return await NodeDIManager.register(map);
 
 }
 
